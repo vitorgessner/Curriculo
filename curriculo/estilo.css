@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h1, h2 {
+    font-family: 'Bebas Neue';
+}
+
+.pagina {
+    display: flex;
+    width: 21cm;
+    height: 29.7cm;
+    background-color: #c2b468;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.containerEsquerdo {
+    width: 50%;
+    height: 100%;
+    padding: 28px;
+    background-color: #fff;
+}
+
+.moldura-imagem {
+    border: 16px solid #e9da86;
+}
+
+.moldura-imagem img {
+    width: 100%;
+    display: block;
+}
+
+.containerEsquerdo h1, .containerEsquerdo h2, .containerEsquerdo p {
+    color: #d6c87b;
+}
+
+.containerEsquerdo h1 {
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-size: 42px;
+    padding-bottom: 0;
+}
+
+.containerEsquerdo h2 {
+    margin-top: 25px;
+    letter-spacing: 2px;
+}
+
+.containerEsquerdo p {
+    font-size: 20px;
+}
+
+.estilo-hr {
+    height: 7px;
+    background-color: #e9da86;
+    padding-top: 0;
+    border: 0;
+}
+
+.containerDireito {
+    width: 50%;
+    height: 100%;
+    padding: 0 28px;
+    /* border: 1px solid black; */
+    margin-left: 15px;
+    color: white;
+}
+
+.containerDireito p {
+    font-size: 18px;
+}
+
+.containerDireito hr {
+    height: 3px;
+    border: 0;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+.containerDireito h2 {
+    letter-spacing: 2px;
+}
+
+.box {
+    border: 2px solid white;
+    padding: 8px;
+    margin-bottom: 25px;
+    /* height: auto; */
+}
+
+.conteudo {
+    padding-top: 0;
+}
