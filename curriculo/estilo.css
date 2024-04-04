@@ -55,7 +55,7 @@ h1, h2 {
 }
 
 .containerEsquerdo p {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .estilo-hr {
@@ -72,10 +72,6 @@ h1, h2 {
     /* border: 1px solid black; */
     margin-left: 15px;
     color: white;
-}
-
-.containerDireito p {
-    font-size: 18px;
 }
 
 .containerDireito hr {
