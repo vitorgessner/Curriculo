@@ -5,7 +5,7 @@
 
 body {
     margin: 15px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h1, h2 {
@@ -13,6 +13,7 @@ h1, h2 {
 }
 
 .pagina {
+    z-index: -1;
     display: flex;
     width: 21cm;
     height: 29.7cm;
@@ -22,6 +23,8 @@ h1, h2 {
 }
 
 .containerEsquerdo {
+    position: relative;
+    z-index: 0;
     width: 50%;
     height: 100%;
     padding: 28px;
@@ -39,6 +42,8 @@ h1, h2 {
 
 .containerEsquerdo h1, .containerEsquerdo h2, .containerEsquerdo p {
     color: #d6c87b;
+    z-index: 2;
+    position: relative;
 }
 
 .containerEsquerdo h1 {
@@ -63,6 +68,8 @@ h1, h2 {
     background-color: #e9da86;
     padding-top: 0;
     border: 0;
+    z-index: 2;
+    position: relative;
 }
 
 .containerDireito {
@@ -72,6 +79,10 @@ h1, h2 {
     /* border: 1px solid black; */
     margin-left: 15px;
     color: white;
+}
+
+.containerDireito p {
+    font-size: 18px;
 }
 
 .containerDireito hr {
@@ -88,10 +99,21 @@ h1, h2 {
 .box {
     border: 2px solid white;
     padding: 8px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
     /* height: auto; */
 }
 
 .conteudo {
     padding-top: 0;
 }
+
+.icone {
+    position: absolute;
+    z-index: 1;
+    transform: rotate(90deg);
+    opacity: 0.15;
+    margin: 590px -130px;
+    max-width: 550px;
+    height: auto;
+}
+
