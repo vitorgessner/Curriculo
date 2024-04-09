@@ -196,6 +196,24 @@ h1, h2, h3 {
 .disc a {
     color: white;
     padding: 5px;
+    text-wrap: nowrap;
+    /* display: inline-block; */
+}
+
+.discul li:first-child a {
+    padding-right: 32px;
+}
+.discul li:nth-child(2) a {
+    padding-right: 130px;
+}
+.discul li:nth-child(3) a {
+    padding-right: 164px;
+}
+.discul li:nth-child(4) a {
+    padding-right: 97px;
+}
+.discul li:nth-child(5) a {
+    padding-right: 104px;
 }
 
 .premio li:nth-child(odd) {
