@@ -1,19 +1,214 @@
-body {
-    background-color: #83a1b5;
+* {
     margin: 0;
-    /* overflow: hidden; */
+    box-sizing: border-box;
 }
 
-.perfil {
-    background-color: white;
+body {
+    margin: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Bebas Neue';
+}
+
+.pagina {
+    display: flex;
     width: 21cm;
-    height: 29cm;
-    /* margin: 30px 25px 30px; */
-    float: left;
+    height: 29.7cm;
+    background-color: rgb(207, 194, 119);
+    margin: 0 auto;
+    padding: 32px;
 }
 
-.conteudo {
-    float: left;
+.containerEsquerdo {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding: 28px;
+    background-color: #fff;
+}
+
+.moldura-imagem {
+    border: 16px solid #fcec92;
+}
+
+.moldura-imagem img {
+    width: 100%;
+    display: block;
+}
+
+.containerEsquerdo h1, .containerEsquerdo h2, .containerEsquerdo p, .containerEsquerdo a{
+    color: #d6c87b;
+    z-index: 2;
+    position: relative;
+}
+
+.containerEsquerdo ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato a {
+    text-decoration: none;
+    margin-top: 2px;
+    padding: 8px;
+    height: auto;
+    position: absolute;
+}
+
+.contato a:hover {
+    background-color: #f7efc78e;
+    border-radius: 8px;
+}
+
+.containerEsquerdo a, .hab a, .disc a {
+    text-decoration: none;
+}
+
+.containerEsquerdo a:hover {
+    text-decoration: underline;
+}
+
+.containerEsquerdo h1 {
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-size: 42px;
+    padding-bottom: 0;
+}
+
+.icone {
+    width: 50px;
+    height: 39px;
+    padding: 0 5px;
+    margin: 3px 0 0 -6px;
+    opacity: 0.45;
+}
+
+.containerEsquerdo h2 {
     margin-top: 15px;
+    letter-spacing: 2px;
+}
+
+.containerEsquerdo p, .containerDireito p, .hab, .disc {
+    font-size: 18px;
+}
+
+.containerEsquerdo ul {
+    font-size: 16px;
+}
+
+.containerEsquerdo ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.containerEsquerdo li {
+    padding: 0;
+}
+
+.estilo-hr {
+    height: 7px;
+    background-color: #e9da86;
+    padding-top: 0;
+    border: 0;
+    z-index: 2;
+    position: relative;
+}
+
+.containerDireito {
+    width: 50%;
+    height: 100%;
+    padding: 0 28px;
+    margin-left: 15px;
     color: white;
 }
+
+.containerDireito hr {
+    height: 3px;
+    border: 0;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+.containerDireito h3 {
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+
+.containerDireito h2 {
+    font-size: 32px;
+}
+
+.box {
+    border: 2px solid white;
+    padding: 8px;
+    margin-bottom: 22px;
+}
+.box2 {
+    border: 2px solid white;
+    margin-bottom: 22px;
+}
+
+.box2 p {
+    padding: 5px;
+}
+
+.marca-agua {
+    position: absolute;
+    z-index: 1;
+    transform: rotate(90deg);
+    opacity: 0.16;
+    margin: 590px -125px;
+    max-width: 550px;
+    height: auto;
+}
+
+.premio {
+    margin-left: -30px;
+
+}
+.premio li {
+    padding: 10px 20px;
+    list-style-type: none;
+    border: 2px solid white;
+    width: 103.5%;
+    margin-left: -10px;
+}
+
+.premio a {
+    color:#fcec92;
+}
+
+.hab ul, .disc ul {
+    margin-left: -20px;
+}
+.hab li, .disc li {
+    padding: 2px 0;
+}
+
+.hab {
+    padding: 10px;
+}
+
+.disc a {
+    color: white;
+    padding: 5px;
+}
+
+.premio li:nth-child(odd) {
+    background-color: #fcec9241;
+}
+
+.disc li {
+    list-style-type: none;
+    margin-left: -23px;
+}
+
+.disc li:hover {
+    background-color: #fcec9279;
+    border-radius: 8px;
+}
+
