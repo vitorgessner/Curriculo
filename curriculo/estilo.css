@@ -1,119 +1,19 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
-    margin: 15px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #83a1b5;
+    margin: 0;
+    /* overflow: hidden; */
 }
 
-h1, h2 {
-    font-family: 'Bebas Neue';
-}
-
-.pagina {
-    z-index: -1;
-    display: flex;
-    width: 21cm;
-    height: 29.7cm;
-    background-color: #c2b468;
-    margin: 0 auto;
-    padding: 32px;
-}
-
-.containerEsquerdo {
-    position: relative;
-    z-index: 0;
-    width: 50%;
-    height: 100%;
-    padding: 28px;
-    background-color: #fff;
-}
-
-.moldura-imagem {
-    border: 16px solid #e9da86;
-}
-
-.moldura-imagem img {
-    width: 100%;
-    display: block;
-}
-
-.containerEsquerdo h1, .containerEsquerdo h2, .containerEsquerdo p {
-    color: #d6c87b;
-    z-index: 2;
-    position: relative;
-}
-
-.containerEsquerdo h1 {
-    text-align: center;
-    padding: 10px;
-    letter-spacing: 2px;
-    font-size: 42px;
-    padding-bottom: 0;
-}
-
-.containerEsquerdo h2 {
-    margin-top: 25px;
-    letter-spacing: 2px;
-}
-
-.containerEsquerdo p {
-    font-size: 18px;
-}
-
-.estilo-hr {
-    height: 7px;
-    background-color: #e9da86;
-    padding-top: 0;
-    border: 0;
-    z-index: 2;
-    position: relative;
-}
-
-.containerDireito {
-    width: 50%;
-    height: 100%;
-    padding: 0 28px;
-    /* border: 1px solid black; */
-    margin-left: 15px;
-    color: white;
-}
-
-.containerDireito p {
-    font-size: 18px;
-}
-
-.containerDireito hr {
-    height: 3px;
-    border: 0;
-    margin-bottom: 5px;
+.perfil {
     background-color: white;
-}
-
-.containerDireito h2 {
-    letter-spacing: 2px;
-}
-
-.box {
-    border: 2px solid white;
-    padding: 8px;
-    margin-bottom: 22px;
-    /* height: auto; */
+    width: 21cm;
+    height: 29cm;
+    /* margin: 30px 25px 30px; */
+    float: left;
 }
 
 .conteudo {
-    padding-top: 0;
+    float: left;
+    margin-top: 15px;
+    color: white;
 }
-
-.icone {
-    position: absolute;
-    z-index: 1;
-    transform: rotate(90deg);
-    opacity: 0.15;
-    margin: 590px -130px;
-    max-width: 550px;
-    height: auto;
-}
-
