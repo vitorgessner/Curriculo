@@ -17,10 +17,11 @@ h1, h2, h3 {
     width: 21cm;
     height: 29.7cm;
     background-color: rgb(207, 194, 119);
-    margin: 0 auto;
+    margin: auto;
     padding: 32px;
 }
 
+/* container esquerdo */
 .containerEsquerdo {
     position: relative;
     width: 50%;
@@ -40,50 +41,22 @@ h1, h2, h3 {
 
 .containerEsquerdo h1, .containerEsquerdo h2, .containerEsquerdo p, .containerEsquerdo a{
     color: #d6c87b;
-    z-index: 2;
     position: relative;
-}
-
-.containerEsquerdo ul {
-    display: flex;
-    flex-direction: column;
-}
-
-.contato a {
-    text-decoration: none;
-    margin-top: 2px;
-    padding: 8px;
-    height: auto;
-    position: absolute;
-}
-
-.contato a:hover {
-    background-color: #f7efc78e;
-    border-radius: 8px;
-}
-
-.containerEsquerdo a, .hab a, .disc a {
-    text-decoration: none;
-}
-
-.containerEsquerdo a:hover {
-    text-decoration: underline;
 }
 
 .containerEsquerdo h1 {
     text-align: center;
-    padding: 10px;
+    padding: 10px 10px 0;
     letter-spacing: 2px;
     font-size: 42px;
-    padding-bottom: 0;
 }
 
-.icone {
-    width: 50px;
-    height: 39px;
-    padding: 0 5px;
-    margin: 3px 0 0 -6px;
-    opacity: 0.45;
+.estilo-hr {
+    height: 7px;
+    background-color: #e9da86;
+    padding-top: 0;
+    border: 0;
+    position: relative;
 }
 
 .containerEsquerdo h2 {
@@ -95,35 +68,59 @@ h1, h2, h3 {
     font-size: 18px;
 }
 
-.containerEsquerdo ul {
-    font-size: 16px;
+/* marca d'água + contato / container esquerdo */
+.marca-agua {
+    position: absolute;
+    transform: rotate(90deg);
+    opacity: 0.16;
+    margin: 585px -125px;
+    max-width: 550px;
 }
 
-.containerEsquerdo ul {
+.contato ul {
     list-style: none;
     padding: 0;
     margin-top: 5px;
 }
 
-.containerEsquerdo li {
-    padding: 0;
+.containerEsquerdo a, .disc a {
+    text-decoration: none;
 }
 
-.estilo-hr {
-    height: 7px;
-    background-color: #e9da86;
-    padding-top: 0;
-    border: 0;
-    z-index: 2;
-    position: relative;
+.containerEsquerdo a:hover {
+    text-decoration: underline;
 }
 
+.contato a {
+    margin-top: 3px;
+    padding: 8px;
+    position: absolute;
+}
+
+.contato a:hover {
+    background-color: #f7efc78e;
+    border-radius: 8px;
+}
+
+.icone {
+    width: 50px;
+    padding: 0 5px;
+    margin: 3px 0 0 -6px;
+    opacity: 0.45;
+}
+
+/* container direito */
 .containerDireito {
     width: 50%;
     height: 100%;
     padding: 0 28px;
     margin-left: 15px;
     color: white;
+}
+
+.containerDireito h3 {
+    letter-spacing: 2px;
+    font-size: 24px;
 }
 
 .containerDireito hr {
@@ -133,91 +130,25 @@ h1, h2, h3 {
     background-color: white;
 }
 
-.containerDireito h3 {
-    letter-spacing: 2px;
-    font-size: 24px;
+.box {
+    border: 2px solid white;
+    padding: 8px;
+    margin-bottom: 22px;
 }
 
 .containerDireito h2 {
     font-size: 32px;
 }
 
-.box {
-    border: 2px solid white;
-    padding: 8px;
-    margin-bottom: 22px;
-}
-.box2 {
-    border: 2px solid white;
-    margin-bottom: 22px;
-}
-
-.box2 p {
-    padding: 5px;
-}
-
-.marca-agua {
-    position: absolute;
-    z-index: 1;
-    transform: rotate(90deg);
-    opacity: 0.16;
-    margin: 590px -125px;
-    max-width: 550px;
-    height: auto;
-}
-
-.premio {
-    margin-left: -30px;
-
-}
-.premio li {
-    padding: 10px 20px;
-    list-style-type: none;
-    border: 2px solid white;
-    width: 103.5%;
-    margin-left: -10px;
-}
-
-.premio a {
-    color:#fcec92;
-}
-
-.hab ul, .disc ul {
-    margin-left: -20px;
-}
-.hab li, .disc li {
-    padding: 2px 0;
-}
-
-.hab {
-    padding: 10px;
-}
-
+/* discografia + habilidades / container direito */
 .disc a {
     color: white;
     padding: 5px;
     text-wrap: nowrap;
-    /* display: inline-block; */
 }
 
-.discul li:first-child a {
-    padding-right: 32px;
-}
-.discul li:nth-child(2) a {
-    padding-right: 130px;
-}
-.discul li:nth-child(3) a {
-    padding-right: 164px;
-}
-.discul li:nth-child(4) a {
-    padding-right: 97px;
-}
-.discul li:nth-child(5) a {
-    padding-right: 104px;
-}
-
-.premio li:nth-child(odd) {
-    background-color: #fcec9241;
+.disc, .hab ul {
+    margin-left: -20px;
 }
 
 .disc li {
@@ -225,8 +156,57 @@ h1, h2, h3 {
     margin-left: -23px;
 }
 
+.disc li, .hab li {
+    padding: 2px 0;
+}
+
 .disc li:hover {
     background-color: #fcec9279;
     border-radius: 8px;
 }
 
+.disc li:first-child a {
+    padding-right: 34px;
+}
+.disc li:nth-child(2) a {
+    padding-right: 130px;
+}
+.disc li:nth-child(3) a {
+    padding-right: 164px;
+}
+.disc li:nth-child(4) a {
+    padding-right: 97px;
+}
+.disc li:nth-child(5) a {
+    padding-right: 104px;
+}
+
+.hab {
+    border: 2px solid white;
+    margin-bottom: 22px;
+    padding: 11.5px;
+}
+
+/* nominações container direito */
+.premio ul{
+    margin-left: -30px;
+
+}
+.premio li {
+    padding: 10px 20px;
+    list-style-type: none;
+    border: 2px solid white;
+    margin-left: -10px;
+}
+
+.premio a {
+    color:#fcec92;
+}
+
+.premio li:nth-child(odd) {
+    background-color: #fcec9241;
+}
+
+.normal cite {
+    font-style: normal;
+}
